@@ -15,8 +15,10 @@
                 ID="TextBox1" runat="server"></asp:TextBox>
        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><asp:TextBox
                     ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
         <div />
         <div>
+        <br />
         <asp:Button ID="Button4" runat="server" Text="统计控件个数" onclick="Button4_Click" />
         </div>
     </div>
