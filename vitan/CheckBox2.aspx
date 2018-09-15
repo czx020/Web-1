@@ -17,8 +17,7 @@
         <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged1" ></asp:TextBox>
     <hr />
     </div>
-    <div id="div_chk"
-          runat="server">
+    <div id="div_chk" runat="server">
     请选择你的爱好：
     <br />
     <br />
@@ -39,10 +38,10 @@
         你选择的是：
         <br/>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" TextMode="MultiLine" Rows="6" Width="488px"  ></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" TextMode="MultiLine" Rows="6" Width="485px"  ></asp:TextBox>
         <hr />
         </div>
-        <div>
+        <div id="mydiv_result">
             <asp:Button ID="Button2" runat="server" Text="Foreach循环语句用于数组代码示例" />
     </div>
     </div>

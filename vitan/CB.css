@@ -3,7 +3,29 @@
       padding:0px;
       background-color:#fff;
 }
+
 #mydiv
 {
-    boder:1px solid #233;
+    border:1px solid #ff6a00;
 }
+
+h2,h3,h4{ text-align:center;}
+h2{font-size:20px; padding:8px; border-bottom:1px solid black; margin:3px}
+
+img {border:0px;}
+
+span.w250{ display:inline-block; width:250px;}
+
+hr { height:1px; margin:5px 0px 5px 0px;}
+
+#div_chk {padding:4px;}
+
+.tc {text-align:center;}
+
+div.dl {border-bottom:1px dotted silver;}
+
+#div_result #pn;_result { border:2px solid gray; min-height:40px;}
+
+.chk1 { display:block;}
+
+.img1 { width:50px;}
