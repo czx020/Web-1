@@ -1,2 +1,2 @@
 
-WEB Learning
+WEB
