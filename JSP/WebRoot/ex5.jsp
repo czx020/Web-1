@@ -25,41 +25,35 @@
 </head>
 
 <body>
-	<p>
-		请输入Email：<br>
+	<p>请输入Email：<br>
 	<form name="form1" method=get name=from action="">
 		<input type="text" name="client" id="textfield" value="请输入Email">
 		<input type="submit" name="button" id="button" value="提交">
 	</form>
-	<%
-		String str = request.getParameter("cient");
+	<% String str = request.getParameter("cient");
 		if (str != null) {
 			int index = str.indexOf("@");
 			if (index == -1) {
 	%>
-	<br> 你的Email地址没有@.
-	<%
-		} else {
+	<BR> 你的Email地址没有@.
+	<% } else {
 			int space = str.indexOf(" ");
 			if (space == -1) {
 	%><br> 你的Email地址有非法的空格.
-	<%
-		} else {
+	<% } else {
 			int start = str.indexOf("@");
 			int end = str.lastIndexOf("@");
 			if (start != end) {
-	%>
-	<br> 你的Email地址有两个@.
+	%>  <BR>你的Email地址有两个以上@.
 	<%
 		} else {
 			out.print("<br>" + str);
-	%>
-	<br>你的Email地址输入正确。
+	%> <BR>你的Email地址输入正确。
 	<%
-		}
 				}
 			}
 		}
+	}
 	%>
 </body>
 </html>
