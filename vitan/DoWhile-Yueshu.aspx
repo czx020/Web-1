@@ -5,21 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>DoWhile循环找约数</title>
-    <style>
-     .center
-{
-margin-left:auto;
-margin-right:auto;
-width:70%;
-background-color:#b0e0e6;
+   <style>
+       .center
+{     width:792px;
+      margin:10px auto;
+      text-align:center;  
+      padding:20px;
+      background-color:#b0e0e6;
+      border-bottom:1px solid black;
 }
+h2,h3,h4{ color:darkblue }
+
+.myspan{color:Green}
     </style>
 </head>
-<body>
+<body >
     <form id="form1" runat="server">
     <div class="center">
-    <p>使用 Do While 循环求一个数的所以约数.</p>
-    请输入2~200的一个整数：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <h2 class="p">使用 Do While 循环求一个数的所以约数.</h2>
+    <span class="myspan">请输入2~200的一个整数：</span><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     <br />
     <br />
     <asp:Button ID="Button1" runat="server" Text="约数" onclick="Button1_Click" />

@@ -6,15 +6,15 @@
 <head runat="server">
     <title></title>
    <style>
- .center
-{     width:780px;
+       .center
+{     width:792px;
       margin:10px auto;
       text-align:center;  
       padding:20px;
       background-color:#b0e0e6;
       border-bottom:1px solid black;
 }
-h2,h3,h4{ color:Red}
+h2,h3,h4{ color:Red }
 
 .myspan{color:Green}
     </style>
@@ -22,7 +22,7 @@ h2,h3,h4{ color:Red}
 <body>
     <form id="form1" runat="server">
     <div class="center">
-    <h2 class="center">For 循环判断一个数是否为质数。</h2>
+    <h2 >For 循环判断一个数是否为质数。
     <hr />
     <span class="myspan">请输入一个数：</span><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     <br />
