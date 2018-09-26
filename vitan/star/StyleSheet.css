@@ -1,0 +1,153 @@
+﻿*
+{
+    padding:0;
+    margin:0;
+    font:inherit;
+    }
+   body
+   {
+       
+       background-color:#ffffff;
+       font:14px 微软雅黑,黑体,Verdana;
+       color:#333333;
+       border-top:8px solid  #006f74; 
+       }
+       ul
+       {
+           list-style-type:none;
+           
+           }
+ .starbucks-logo
+ {
+     float:left;
+     margin-left:20px;
+     }  
+     .top-menu
+     {
+         float:left;
+         margin-top:83px;
+         margin-left:30px;
+         
+         }  
+      .top-menu ul li
+      {
+          display:inline;
+          background-color:#efe5d0;
+          padding:5px 10px;
+          margin:0 5px;
+          
+          }   
+ .top-menu ul li a:link,top-menu ul li a:visited  
+ {
+     color:#006f47;
+     text-decoration:none;
+     font-weight:bold;
+     
+     
+     }             
+    
+.wrap
+{
+    width:960px;
+    margin:0 auto;
+    }
+ .top-header
+ {
+     margin:10px 0;
+     height:120px;
+     }  
+ .left-aside
+ {
+     float:left;
+     width:350px;
+     
+     } 
+ .left-aside section
+ {
+     background:#efe50d url(images/background.gif);
+     padding:20px;
+     margin-bottom:10px;
+     } 
+ .left-aside h3
+ {
+     color:#006f47;
+     font-size:1.2em;
+     margin-bottom:10px;
+     }  
+     .news p
+     {
+         line-height:1.8em;
+         }  
+.news a
+{
+    text-decoration:none;
+    color:#006f47;
+    }  
+.drinks figure
+{
+    float:left;
+    } 
+    .drinks figure img
+    {
+        width:141px;
+        height:158px;
+        border:2px solid #ffffff;
+        } 
+.drinks figcaption
+{
+    text-align:center;
+    margin-bottom:10px;
+    }         
+  .figure-r
+  {
+      margin-left:20px;}   
+      .clear
+      {
+          clear:both;
+          }             
+ main
+ {
+     background:#efe50d url(images/background.gif) top left ;
+     padding:20px;
+     margin-left:360px;
+     }  
+ main article
+ {
+     border-bottom:1px dashed #c8b99c;
+     margin-bottom:10px;
+     padding-bottom:10px;
+     } 
+  main article h3
+    {
+        color:#006f47;
+        font-size:1.2em;
+        margin-bottom:10px;
+         } 
+  main article time
+       {
+          color:#675c47;
+        }
+        main article p
+        {
+            line-height:1.5em;
+            text-indent:30px;
+            margin:10px 0;
+            }
+        
+            
+     .last-article
+     {
+         border-bottom:none;
+         margin-bottom:0;
+         padding-bottom:0;
+         }
+ .page-footer
+ {
+     clear:both;
+     padding:15px;
+     margin-top:10px;
+     background-color:#675c74;
+     color:White;
+     text-align:center;
+     font-size:90%
+     }          
