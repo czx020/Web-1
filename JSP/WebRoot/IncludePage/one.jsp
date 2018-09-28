@@ -16,7 +16,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body bgcolor=cyan >
  <form action="" method="GET" name="form">
             请输入1~100之间的整数：<input type="text" name="number">
-            <br/> <input type="submit" value="送出" name="submit">
+        <br/> 
+		<input type="submit" value="送出" name="submit">
         </form>
 <% String num = request.getParameter("number");
   		if (num == null)
