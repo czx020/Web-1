@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+body{
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#776851;
+	line-height:25px;
+	background-image:url(img/1701.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+#box
+{
+  
+	width:950px;
+	height:484px;
+	margin:50px auto;
+	background-image:url(img/1702.png);
+	background-repeat:no-repeat;
+	
+}
+#box img{
+	margin-bottom:40px;
+}
+#text
+{
+   
+	float:left;
+	width:280px;
+	height:240px;
+	margin-top:50px;
+	margin-left:100px;
+	
+	
+
+}
+#text01{
+	float:left;
+	width:300px;
+	height:250px;
+	margin-top:130px;
+	margin-left:200px;
+	
+	
+	
+	
+}
