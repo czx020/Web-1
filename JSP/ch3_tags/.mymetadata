@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ch3_tags"
+  id="myeclipse.1539306087416"
+  context-root="/ch3_tags"
+  j2ee-spec="5.0"
+  archive="ch3_tags.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
