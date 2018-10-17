@@ -21,4 +21,28 @@ public partial class _Default : System.Web.UI.Page
             }
         }
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        for (int i = ListBox2.Items.Count-1; i >= 0; i--)
+        {
+            if (ListBox2.Items[i].Selected)
+            {
+                ListBox3.Items.Add(ListBox2.Items[i]);
+                ListBox2.Items.RemoveAt(i);
+            }
+        }
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        for (int i = ListBox3.Items.Count - 1; i >= 0; i--)
+        {
+            if (ListBox3.Items[i].Selected)
+            {
+                ListBox2.Items.Add(ListBox3.Items[i]);
+                ListBox3.Items.Remove(ListBox3.Items[i]);
+            }
+        }
+    }
 }
