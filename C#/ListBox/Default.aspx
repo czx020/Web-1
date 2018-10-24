@@ -12,7 +12,7 @@
             height:21px;
         }
         #list1,#list2,#btns{float:left;width:220px;}
-        #btns{width:178px;padding-top:180px;}
+        #btns{width:78px;padding-top:180px;}
         .listP2{width:200px;height:180px;}
     </style>
 </head>
