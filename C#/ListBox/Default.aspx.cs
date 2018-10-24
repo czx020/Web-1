@@ -14,6 +14,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
      TextBox1.Text = "";
+    // 对listbox控件做遍历。可以for，foreach
     //    for (int i = 0;i<ListBox1.Items.Count;i++){
     //        if(ListBox1.Items[i].Selected)
     //        {
@@ -21,6 +22,16 @@ public partial class _Default : System.Web.UI.Page
     //        }
 
     //    }
+    // 用一个变量获取items,然后操作中间变量。
+    //    for (int i = 0; i < ListBox1.Items.Count; i++)
+    //    {
+    //        ListItem obj_li = ListBox1.Items[i];
+    //        if (obj_li.Selected)
+    //        {
+    //           TextBox1.Text += obj_li.Text + ",";
+    //       }
+    //   }
+    // foreach遍历
         foreach (ListItem _li in ListBox1.Items)
         {
             if (_li.Selected)
