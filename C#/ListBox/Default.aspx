@@ -12,7 +12,7 @@
             height:21px;
         }
         #list1,#list2,#btns{float:left;width:220px;}
-        #btns{width:78px;padding-top:180px;}
+        #btns{width:78px;padding-top:80px;}
         .listP2{width:200px;height:180px;}
     </style>
 </head>
@@ -52,7 +52,7 @@
 
     </div>
        <div id="btns">
-           <asp:Button ID="Button2" runat="server" Text=">>>" OnClick="Button2_Click" /> <br />
+           <asp:Button ID="Button2" runat="server" Text=">>>" OnClick="Button2_Click" /> <br /> <br />
            <asp:Button ID="Button3" runat="server" Text="<<<" OnClick="Button3_Click" />
            </div>
            <div id="list2">
