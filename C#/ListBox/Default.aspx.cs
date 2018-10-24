@@ -13,6 +13,14 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
+     TextBox1.Text = "";
+    //    for (int i = 0;i<ListBox1.Items.Count;i++){
+    //        if(ListBox1.Items[i].Selected)
+    //        {
+    //            TextBox1.Text += ListBox1.Items[i].Text + ",";
+    //        }
+
+    //    }
         foreach (ListItem _li in ListBox1.Items)
         {
             if (_li.Selected)
