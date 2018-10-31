@@ -15,7 +15,7 @@ public partial class Sample_02 : System.Web.UI.Page
     {
         string _checked = chk_1.Checked.ToString();
         string _url = "Sample_02_targ.aspx?chk=" + _checked;
-        Server.Transfer(_url);
+        Server.Transfer(_url); //可以提高安全性，目标网址不可见，但回退有问题
 
     }
     protected void btn_name_Click(object sender, EventArgs e)
