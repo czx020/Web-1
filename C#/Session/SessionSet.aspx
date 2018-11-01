@@ -8,26 +8,28 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <h3>Session的应：设置页</h3>
-
-    <p>1.存储字符串的 Session</p>
+    <div class="1">
+    <h2>SessionSet page</h2>
+        <p>1.存储字符串的session：<br />
         <asp:TextBox ID="txt_ss_txt" runat="server"></asp:TextBox>
-        <asp:Button ID="btn_ss_txt"
-            runat="server" Text="保存至 Session['ss_text']" onclick="Button1_Click" />
-
-    <p>2.存储一个数组;(输入22，33，444的形式):</p><br />
-        <asp:TextBox ID="txt_ss_arr" runat="server" Width="250"></asp:TextBox>
-        <asp:Button ID="btn_ss_arr" runat="server" Text="保存至Session[ss_Sarr]" onclick="btn_ss_arr_Click"  />
+        <asp:Button ID="btn_ss_txt" runat="server" Text="保存至Session['ss_txt']" 
+            onclick="btn_ss_txt_Click" />
+    </p>
+    </div>
+    <div>
     
-
-    <p>3.存储一个控件：</p><asp:Button ID="Button1" runat="server" Text="保存至session['ss_cal']" 
-            onclick="Button1_Click2" />
-    <br />
-        <asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" 
-            BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" 
-            Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="200px" 
-            ShowGridLines="True" Width="220px">
+       <p> 2.存储字符串数组的session：(如输入33,44,55,66的形式)<br />
+        <asp:TextBox ID="txt_ss_arr" runat="server"></asp:TextBox>
+        <asp:Button ID="btn_arr" runat="server" Text="保存至Session['ss_Sarr']" 
+            onclick="btn_arr_Click" />
+    </p>
+    </div>
+    <div>
+    
+        <p>3.存储一个控件：<asp:Calendar ID="Calendar1" 
+            runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" 
+            DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" 
+            ForeColor="#663399" Height="200px" ShowGridLines="True" Width="220px">
             <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
             <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
             <OtherMonthDayStyle ForeColor="#CC9966" />
@@ -37,8 +39,20 @@
                 ForeColor="#FFFFCC" />
             <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
         </asp:Calendar>
-    <p><a href="SessionRead.aspx">跳转至读取页面</a></p>
+        <br />
+        <asp:Button ID="btn_cal" runat="server" Text="保存至Session['ss_cal']" 
+            onclick="btn_cal_Click" />
+    </p>
+    </div>
+    <div>
     
+       <p> 4.用Session.Add方式添加一个重名的Key,ss_txt：<asp:Button ID="btn_key" 
+            runat="server" Text="添加重名key" onclick="btn_key_Click" />
+       
+    </p>
+    </div>
+    <div>
+        <asp:LinkButton ID="lbtn_jump" runat="server" PostBackUrl="~/sessionRead.aspx">跳转到读取Session的页面</asp:LinkButton>
     </div>
     </form>
 </body>

@@ -9,20 +9,45 @@
 <body>
     <form id="form1" runat="server">
     <div>
-       <h3>Session的应：读取页</h3>
-
-       <p>读取 ss_txt 的值：<asp:Label ID="lab_ss_txt" runat="server" ></asp:Label></p>
-
-       <p> 读取ss_Sarr 的值：
-       <asp:TextBox ID="txt_readSarr" runat="server" TextMode="MultiLine" Rows="5" ></asp:TextBox></p>
-       
-       <p>读取控件ss_cal:
-           <asp:Panel ID="pnl_ss_cal" runat="server" CssClass="asppanel">
-           </asp:Panel>
-        
-        </p>
-        
+     <h2>SessionRead page</h2>
+       <p> 读取ss_txt的值：</p><asp:Label ID="lb_ss" runat="server" Text=""></asp:Label>
+    
     </div>
+    <div>
+    
+        <p>读取ss_Sarr的值：</p><asp:TextBox ID="txt_Sarr" 
+            runat="server" TextMode="MultiLine" Width="230px" Height="80px"></asp:TextBox>
+    
+    </div>
+    <div>
+    
+       <p> 读取控件：</p><asp:Panel ID="Panel1" runat="server">
+        </asp:Panel>
+    
+    </div>
+    <div>
+    
+        <p>读取Session相关属性参数：</p>
+        <p>1.遍历Session:<br /></p>
+        <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+        <br />
+        <p>2.获取SessionID：</p>
+        <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+    
+        <br />
+        <p>3.查看Session过期时间（还剩多少分钟）</p>
+        <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+    
+    </div>
+    <div>
+    
+        <asp:Button ID="Button1" runat="server" Text="清除所有的Session" 
+            onclick="Button1_Click" /><asp:Button ID="Button2" runat="server" 
+            Text="清除Session ss_txt" onclick="Button2_Click" />
+    
+    </div>
+    <asp:LinkButton ID="LinkButton1"
+        runat="server" PostBackUrl="~/sessionSet.aspx">返回设置页</asp:LinkButton>
     </form>
 </body>
 </html>
