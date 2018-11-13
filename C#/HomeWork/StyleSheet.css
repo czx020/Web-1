@@ -1,0 +1,178 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo {
+    width: 895px;
+    height: 45px;
+    /*margin:上下 左右*/
+    margin: 50px auto;
+    border-radius: 10px;
+    /*html + css3 渐变画图 */
+    background-image: -webkit-linear-gradient(rgba(41,41,41,0.75) 0%,rgba(54,54,54,0.72) 50%,rgba(24,23,23,0.94) 51%);
+    box-shadow: 1px 1px 33px #fff; /*设计阴影的*/
+}
+
+    #Logo ul li {
+        width: 127px;
+        height: 45px;
+        list-style: none; /*去掉圆点*/
+        float: left; /*水平显示*/
+        color: white; /* #fff */
+        font-size: 18px;
+        font-family: "微软雅黑";
+        text-align: center;
+        line-height: 45px; /* 行高跟 高度一致时，竖直居中*/
+        border-right: 1px solid #000; /*右边框*/
+    }
+
+        #Logo ul li a {
+            color: white; /* #fff */
+            font-size: 18px;
+            font-family: "微软雅黑";
+            text-decoration: none;
+        }
+
+        #Logo ul li:hover {
+            background: rgba(10,5,5,0.45);
+        }
+
+        #Logo ul li.first:hover {
+            border-radius: 10px 0px 0px 10px; /*左上 左下 圆弧显示 */
+        }
+
+        #Logo ul li.last:hover {
+            border-radius: 0px 10px 10px 0px; /*右上 右下 圆弧显示 */
+        }
+
+        #Logo ul li ul li {
+            border: none;
+            border-top: 1px solid #989898;
+            background: rgba(10,5,5,0.45); /*颜色透明度 */
+            border-radius: 10px;
+        }
+
+        #Logo ul li ul {
+            display: none; /*不显示*/
+        }
+
+            #Logo ul li ul li:hover {
+                background: rgba(10,5,5,0.8); /*颜色透明度 */
+                border-radius: 10px;
+            }
+
+        #Logo ul li:hover ul {
+            display: block;
+            -webkit-animation: roll 1s ease; /*roll 旋转名称，1s旋转效果 */
+        }
+
+@-webkit-keyframes roll /*roll旋转名称与上面一致*/
+{
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+#box {
+    background-color:gray;
+    width: 900px;
+    height: auto;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+#left {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+
+#right {
+    float: left;
+    display: inline-block;
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+
+.clv {
+    clear: both;
+}
+
+.projects{
+    color:azure;
+}
+
+#left .linux{
+    text-align:center;
+    font-size:12px;
+    margin-top:3px;
+    font-family:"Microsoft Sans Serif"
+}
+
+#GridVie {
+}
+
+#GridView1 td img {
+    width: 120px;
+    height: 110px;
+    border: 1px solid #d3ccd7;
+    padding: 2px;
+    font-family: "微软雅黑";
+}
+
+#GridView1 th {
+    background: black;
+    font-size: 14px;
+    padding: 10px;
+    color: White;
+    font-family: "微软雅黑";
+}
+
+#GridView1 td {
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+    border: 1px solid white;
+    font-family: "微软雅黑";
+}
+
+#GridView1 tr:hover {
+    background-color: Cyan;
+}
+
+#GridView1 tr:nth-child(odd) {
+    background: rgba(0,225,255,.1);
+}
+
+#copyright {
+    width: 895px;
+    height: 45px;
+    /*margin:上下 左右*/
+    margin: 50px auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    /*html + css3 渐变画图 */
+    background-image: -webkit-linear-gradient(rgba(41,41,41,0.75) 0%,rgba(54,54,54,0.72) 50%,rgba(24,23,23,0.94) 51%);
+    box-shadow: 1px 1px 33px #fff; /*设计阴影的*/
+}
+
+    #copyright li {
+        text-align: center;
+        list-style: none; /*去掉圆点*/
+        color: white; /* #fff */
+        font-size: 14px;
+        font-family: "微软雅黑";
+        line-height: 45px; /* 行高跟 高度一致时，竖直居中*/
+    }
