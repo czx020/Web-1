@@ -38,7 +38,7 @@
         <br />
         </div>
         <div id="right">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="产品编号" DataSourceID="SqlDataSource1" AllowPaging="True">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="产品编号" DataSourceID="SqlDataSource1" AllowPaging="True" PageSize = "5">
                 <Columns>
                     <asp:BoundField DataField="产品编号" HeaderText="编号" ReadOnly="True" SortExpression="产品编号" />
                     <asp:BoundField DataField="产品名称" HeaderText="名称" SortExpression="产品名称" />
