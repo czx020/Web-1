@@ -13,7 +13,7 @@
     padding-top:30px;
     margin:0 auto 0;
     width:800px;
-    font-family:@微软雅黑;
+    font-family:"微软雅黑";
     
 }
     #GridVie
@@ -25,7 +25,7 @@
         height:110px;
         border:1px solid #d3ccd7;
         padding:2px;
-        font-family:@微软雅黑;
+        font-family:"微软雅黑";
     }
      
     #GridView1 th
@@ -34,7 +34,7 @@
       font-size:14px;
       padding:10px;
       color:White;
-      font-family:@微软雅黑;
+      font-family:"微软雅黑";
     }
     #GridView1 td
     {
@@ -42,7 +42,7 @@
         color:WindowText;
         font-size:12px;
         border:1px solid red;
-        font-family:@微软雅黑;
+        font-family:"微软雅黑";
     }
     #GridView1 tr:hover
     {

@@ -90,6 +90,7 @@
 #left {
     float: left;
     display: inline-block;
+    margin-top:1px;
     text-align: center;
     background-color: gray;
     padding: 10px;
@@ -100,6 +101,7 @@
 #right {
     float: left;
     display: inline-block;
+    margin-top: 1px;
     background-color: gray;
     padding: 10px;
     border: 1px solid black;
@@ -149,7 +151,7 @@
 }
 
 #GridView1 tr:hover {
-    background-color: Cyan;
+    background-color: cornflowerblue;
 }
 
 #GridView1 tr:nth-child(odd) {

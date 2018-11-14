@@ -38,22 +38,20 @@
         <br />
         </div>
         <div id="right">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="产品编号" DataSourceID="SqlDataSource3" AllowPaging="True">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="产品编号" DataSourceID="SqlDataSource1" AllowPaging="True">
                 <Columns>
-                    <asp:BoundField DataField="产品编号" HeaderText="产品编号" ReadOnly="True" SortExpression="产品编号" />
-                    <asp:BoundField DataField="产品名称" HeaderText="产品名称" SortExpression="产品名称" />
-                    <asp:BoundField DataField="产品价格" HeaderText="产品价格" SortExpression="产品价格" />
-                    <asp:BoundField DataField="产品图片" HeaderText="产品图片" SortExpression="产品图片" />
-                    <asp:BoundField DataField="产品类别" HeaderText="产品类别" SortExpression="产品类别" />
+                    <asp:BoundField DataField="产品编号" HeaderText="编号" ReadOnly="True" SortExpression="产品编号" />
+                    <asp:BoundField DataField="产品名称" HeaderText="名称" SortExpression="产品名称" />
+                    <asp:ImageField DataImageUrlField="产品图片" DataImageUrlFormatString="img\{0}" HeaderText="图片">
+                    </asp:ImageField>
+                    <asp:BoundField DataField="产品类别" HeaderText="类别" SortExpression="产品类别" />
+                    <asp:BoundField DataField="价格层次" HeaderText="价格层次" SortExpression="价格层次" />
                     <asp:CheckBoxField DataField="产品有效" HeaderText="产品有效" SortExpression="产品有效" />
-                    <asp:BoundField DataField="产品排序" HeaderText="产品排序" SortExpression="产品排序" />
+                    <asp:BoundField DataField="产品排序" HeaderText="排序" SortExpression="产品排序" />
+                    <asp:BoundField DataField="单位" HeaderText="单位" SortExpression="单位" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:tianpingdianConnectionString %>" ProviderName="<%$ ConnectionStrings:tianpingdianConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [商品存量]"></asp:SqlDataSource>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
-            <asp:EntityDataSource ID="EntityDataSource1" runat="server">
-            </asp:EntityDataSource>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:tianpingdianConnectionString3 %>" ProviderName="<%$ ConnectionStrings:tianpingdianConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM [商品明细]"></asp:SqlDataSource>
         </div>
         </div>
         <div class="clv"></div>
