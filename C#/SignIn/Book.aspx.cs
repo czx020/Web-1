@@ -26,7 +26,7 @@ public partial class Book : System.Web.UI.Page
 
 
 
-        string sql = "insert into  书籍表(书籍编号,书籍名称,书籍封面图,书籍价格,出版社,出版时间,主编作者,书籍类别) values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "')";
+        string sql = "insert into 书籍表(书籍编号,书籍名称,书籍封面图,书籍价格,出版社,出版时间,主编作者,书籍类别) values('" + bh.Text + "','" + mc.Text + "','" + fm.Text + "','" + jg.Text + "','" + cbs.Text + "','" + sj.SelectedDate.ToString() + "','" + zz.Text + "','" + lb.Text + "')";
 
         Response.Write(sql);
         cnn.Open();
