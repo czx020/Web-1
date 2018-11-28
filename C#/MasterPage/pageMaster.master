@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="pageMaster.master.cs" Inherits="pageMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width:800px; height: 600px">
+            <tr>
+                <td colspan="2" background="images/top.jpg" valign="bottom" height="190">
+                    <table style="width: 100%" bgcolor="#35b7ff">
+                        <tr>
+                            <td style="width: 204px; height: 20px;">
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Default.aspx">首  页</asp:HyperLink></td>
+                            <td style="width: 191px; height: 20px;">
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="company.aspx">公司简介</asp:HyperLink></td>
+                            <td style="width: 199px; height: 20px;">
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="news.aspx">公司新闻</asp:HyperLink></td>
+                            <td style="width: 204px; height: 20px;">
+                                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="product.aspx">产品介绍</asp:HyperLink></td>
+                            <td style="width: 198px; height: 20px;">
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="contact.aspx">联系我们</asp:HyperLink></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px; height:179px" bgcolor="#35b7ff" valign="top">
+                    <img src="images/ffwd.gif" />产品导航<br />
+                    <ul>
+                    <li>产品一</li>
+                    <li>产品二</li>
+                    <li>产品三</li>
+                    <li>产品四</li>
+                    </ul>
+                </td>
+                <td style="width: 781px; height: 179px" valign="top">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="lightskyblue" style="height:100px;" valign="top" align="center">&copy; 版权所有
+                    <br />
+                    <br />
+                    地址：xxxxx&nbsp; 电话： xxxxxx</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

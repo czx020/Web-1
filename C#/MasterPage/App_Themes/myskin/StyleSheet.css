@@ -1,0 +1,35 @@
+﻿#ContentPlaceHolder1_GridVie
+        {
+            }
+    #ContentPlaceHolder1_GridView1 td img
+    {
+        width:120px;
+        height:110px;
+        border:1px solid #d3ccd7;
+        padding:2px;
+        font-family:"微软雅黑";
+    }
+     
+    #ContentPlaceHolder1_GridView1 th
+    {
+      background:purple;
+      font-size:14px;
+      padding:10px;
+      color:White;
+      font-family:"微软雅黑";
+    }
+    #ContentPlaceHolder1_GridView1 td
+    {
+        padding:5px;
+        color:WindowText;
+        font-size:12px;
+        border:1px solid red;
+        font-family:"微软雅黑";
+    }
+    #ContentPlaceHolder1_GridView1 tr:hover
+    {
+        background-color:Cyan;
+    }
+    #ContentPlaceHolder1_GridView1 tr:nth-child(odd)
+    {
+        background:rgba(0,225,255,.1);}
