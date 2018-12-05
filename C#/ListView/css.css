@@ -15,8 +15,8 @@
 
 #box{
     background:#ececec;
-    width:750;
-    margin:0 atto;
+    width:750px;
+    margin:0 auto;
 }
 
 h1   
@@ -29,12 +29,13 @@ h1
 .fl
 {
     float:left;
+    margin-left:30px;
 }
 
-.fr
-{
-    float:right;
-    }
+.fr {
+    float: left;
+    margin-left: 30px;
+}
     
  .clr
  {
@@ -64,9 +65,9 @@ h1
      float:left;
      padding:10px;
      background-color:White;
-     border:1px solid #eee;
-     height:180px;
-     width:auto;
+     border:1px solid #f40;
+     height:150px;
+     width:130px;
  }
  
  .div_item img:hover
@@ -76,12 +77,12 @@ h1
 
 .div_item:hover
 {
-    background-color:fff;
+    background-color:#fff;
 }
 
 .div_item h2
 {
-    font-family:@微软雅黑;
+    font-family:"微软雅黑";
     font-size:16px;
     color:#444;
     letter-spacing:2px;
@@ -100,4 +101,12 @@ h1
     color:Red;
 }
 
+#foot {
+    text-align: center;
+    list-style: none; /*去掉圆点*/
+    color:black; /* #fff */
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 45px; /* 行高跟 高度一致时，竖直居中*/
+}
 
