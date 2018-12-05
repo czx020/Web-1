@@ -1,0 +1,103 @@
+﻿body ,p,img,div,h1,h2,h3,h4,h5{
+    margin:0px;
+    padding:0px;
+}
+
+ body 
+{
+    background-repeat:no-repeat;
+    padding-top:30px;
+    margin:0 auto 0;
+    width:1080px;
+    font-family:"微软雅黑";
+    
+}
+
+#box{
+    background:#ececec;
+    width:750;
+    margin:0 atto;
+}
+
+h1   
+{
+    padding:15px;
+    border-bottom:1px solid #dedede;
+    text-align:center;
+}
+
+.fl
+{
+    float:left;
+}
+
+.fr
+{
+    float:right;
+    }
+    
+ .clr
+ {
+     clear:both;
+ }
+ 
+ #div_listview
+ {
+     width:500px;
+ }
+ 
+ #div_menu
+ {
+     width:180px;
+ }
+ 
+ .div_item
+ {
+     border-bottom:1px dashed #ededed;
+     margin-bottom:10px;
+     padding:5px;
+ }
+ 
+ .div_item img
+ {
+     margin-right:15px;
+     float:left;
+     padding:10px;
+     background-color:White;
+     border:1px solid #eee;
+     height:180px;
+     width:auto;
+ }
+ 
+ .div_item img:hover
+ {
+     border:1px solid #999;
+     }
+
+.div_item:hover
+{
+    background-color:fff;
+}
+
+.div_item h2
+{
+    font-family:@微软雅黑;
+    font-size:16px;
+    color:#444;
+    letter-spacing:2px;
+    margin:0px 0px 10px 0px;
+}
+
+.div_item p
+{
+    font-size:12px;
+    color:#888;
+    margin:0px 0px 10px 0px;
+}
+
+.div_item li a:hover
+{
+    color:Red;
+}
+
+
