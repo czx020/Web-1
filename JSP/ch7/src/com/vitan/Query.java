@@ -1,19 +1,20 @@
 package com.vitan;
 import java.sql.*;
 
-public class Query {
-	String databaseName = "";
-	String tableName = "";
-	String user = "";
-	String password = "71017";
-	StringBuffer queryResult;
-	
-	public Query() {
-		// TODO Auto-generated constructor stub
+public class QueryBean {
+	String databaseName = ""; // 鏁版嵁搴撳悕
+	String tableName = ""; // 琛ㄥ悕
+	String user = ""; // 鐢ㄦ埛
+	String password = ""; // 瀵嗙爜
+	StringBuffer queryResult; // 鏌ヨ缁撴灉
+
+	public QueryBean() {
 		queryResult = new StringBuffer();
-		try{  Class.forName("com.mysql.jdbc.Driver");
-	    }
-	    catch(Exception e){} 
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 
 	public String getDatabaseName() {
@@ -21,7 +22,7 @@ public class Query {
 	}
 
 	public void setDatabaseName(String databaseName) {
-		this.databaseName = databaseName;
+		this.databaseName = databaseName.trim();
 	}
 
 	public String getTableName() {
@@ -29,7 +30,7 @@ public class Query {
 	}
 
 	public void setTableName(String tableName) {
-		this.tableName = tableName;
+		this.tableName = tableName.trim();
 	}
 
 	public String getUser() {
@@ -37,7 +38,7 @@ public class Query {
 	}
 
 	public void setUser(String user) {
-		this.user = user;
+		this.user = user.trim();
 	}
 
 	public String getPassword() {
@@ -45,43 +46,43 @@ public class Query {
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		this.password = password.trim();
 	}
 
 	public StringBuffer getQueryResult() {
-		Connection con;//声明数据库连接对象
-	    Statement sql; //声明数据库操作对象
-	    ResultSet rs;//声明结果集对象
-	    try{  queryResult.append("<table border=1>"); //追加<table border=1>到result的末尾
-	          String uri="jdbc:mysql://127.0.0.1/"+ databaseName;//连接数据库的路径
-	          con=DriverManager.getConnection(uri,user,password);//建立与数据库的连接
-	          DatabaseMetaData metadata=con.getMetaData();//创建元数据对象
-	          ResultSet rs1=metadata.getColumns(null,null,tableName,null);
-	          int number2=0;//是一计数器，表示字段的个数
-	          queryResult.append("<tr>");//追加<tr>到result的末尾
-	          while(rs1.next()){//输出表头
-	             number2++;
-	             String clumnName=rs1.getString(4);
-	             queryResult.append("<td>"+clumnName+"</td>");
-	          }
-	          queryResult.append("</tr>");
-	          sql=con.createStatement();
-	          rs=sql.executeQuery("SELECT * FROM "+tableName);//执行查询语句
-	          while(rs.next()){//输出表中的记录
-	        	  queryResult.append("<tr>");
-	               for(int k=1;k<=number2;k++) 
-	            	   queryResult.append("<td>"+rs.getString(k)+"</td>");
-	               queryResult.append("</tr>");
-	          }
-	          queryResult.append("</table>");
-	rs1.close();
-	rs.close();
-	sql.close();
-	          con.close();
-	    }
-	    catch(SQLException e){
-	    	queryResult.append("请输入正确的用户名和密码");
-	}
+		Connection con;
+		Statement sql;
+		ResultSet rs;
+		try {
+			queryResult.append("<table border=1>");
+			String uri = "jdbc:mysql://127.0.0.1/" + databaseName;
+			con = DriverManager.getConnection(uri, user, password);
+			DatabaseMetaData metadata = con.getMetaData();
+			ResultSet rs1 = metadata.getColumns(null, null, tableName, null);
+			int number1 = 0;
+			queryResult.append("<tr>");
+			while (rs1.next()) {
+				number1++;
+				String clumnName = rs1.getString(4);
+				queryResult.append("<td>" + clumnName + "</td>");
+			}
+			queryResult.append("</tr>");
+			sql = con.createStatement();
+			rs = sql.executeQuery("SELECT * FROM " + tableName);
+			while (rs.next()) {
+				queryResult.append("<tr>");
+				for (int k = 1; k <= number1; k++)
+					queryResult.append("<td>" + rs.getString(k) + "</td>");
+				queryResult.append("</tr>");
+			}
+			queryResult.append("</table>");
+			rs1.close();
+			rs.close();
+			sql.close();
+			con.close();
+		} catch (SQLException e) {
+			queryResult.append("璇疯緭鍏ユ纭殑鐢ㄦ埛鍚嶅拰瀵嗙爜");
+		}
 		return queryResult;
 	}
 
