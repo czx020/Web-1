@@ -1,14 +1,14 @@
 package com.vitan;
 import java.sql.*;
 
-public class QueryBean {
+public class Query {
 	String databaseName = ""; // 数据库名
 	String tableName = ""; // 表名
 	String user = ""; // 用户
 	String password = ""; // 密码
 	StringBuffer queryResult; // 查询结果
 
-	public QueryBean() {
+	public Query() {
 		queryResult = new StringBuffer();
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
