@@ -23,12 +23,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
 
 <body>
-	<jsp:setProperty name="base" property="databaseName" value="vitan" />
+	<jsp:useBean id="base" class="tom.vitan.Query" scope="page" />
+	<jsp:setProperty name="base" property="databaseName" value="warehouse" />
 	<jsp:setProperty name="base" property="tableName" value="product" />
 	<jsp:setProperty name="base" property="user" value="root" />
 	<jsp:setProperty name="base" property="password" value="" />
-
-	在<jsp:getProperty name="base" property="tableName" />表查询到记录：
-	<br><jsp:getProperty name="base" property="queryResult" />
+	<Font size=2> 在<jsp:getProperty name="base" property="tableName" />表查询到记录:
+	</Font>
+	<BR>
+	<jsp:getProperty name="base" property="queryResult" />
 </body>
 </html>
